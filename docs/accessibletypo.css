@@ -66,6 +66,10 @@ hr, ul, ol, blockquote {
   margin-left: 0rem;
 }
 
+dt {margin-top: 1rem;}
+
+dd {margin-bottom: 1rem;}
+
 blockquote {padding-right: 2.5rem;}
 
 /* classes */

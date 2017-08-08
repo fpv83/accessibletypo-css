@@ -59,7 +59,7 @@ nav a:link {text-decoration: none;}
 /* set indents and margins to rem for elements */
 ul, ol, dd, blockquote {padding-left: 2.5rem;}
 
-hr, ul, ol, dd, blockquote {
+hr, ul, ol, blockquote {
   margin-top: 1rem;
   margin-right: 0rem;
   margin-bottom: 1rem;

@@ -1,0 +1,95 @@
+html {
+  font-size: 100%;
+  font-family: 'Open Sans', Verdana, Lucida Grande, sans-serif;
+  line-height: 1.5; 
+}
+
+h1 {font-size: 3rem;}
+
+h2 {font-size: 2.25rem;}
+
+h3 {font-size: 1.75rem;}
+
+h4 {font-size: 1.25rem;}
+
+h5 {font-size: 1rem;}
+
+h6 {font-size: 0.875rem;}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.75rem;
+  margin-bottom: 1rem;
+  line-height: 1.25;
+  font-weight: bold;
+}
+
+p { /* paragraph spacing is at least 1.5 times larger than the line spacing. */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+dt {font-weight: bold;}
+
+pre, code {background-color: #F5F5F5;}
+
+pre {color: #CC0000;}
+
+small {font-size: 0.75em;}
+
+code {
+  color: #CC0000;
+  border-radius: 0.25rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+/* links */ 
+a:link {text-decoration: underline;}
+
+a:hover, a:active, a:focus {
+  outline-width: 0.125rem;
+  outline-style: solid;
+  outline-color: #7FDBFF;
+  background-color: #001F3F;
+  color: #7FDBFF;
+}
+
+nav a:link {text-decoration: none;}
+
+/* set indents and margins to rem for elements */
+ul, ol, dd, blockquote {padding-left: 2.5rem;}
+
+hr, ul, ol, dd, blockquote {
+  margin-top: 1rem;
+  margin-right: 0rem;
+  margin-bottom: 1rem;
+  margin-left: 0rem;
+}
+
+blockquote {padding-right: 2.5rem;}
+
+/* classes */
+.visuallyhidden { /*this class enables us to hide an element from the visual representation of a document but its still visible for screanreaders*/
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+a.visuallyhidden:focus {/*making links visually reapear when receiving keyboard focus ex: <a class="visuallyhidden" href="#">skip to content</a>*/
+  height:auto;
+  width: auto;
+  clip: auto;
+}
+
+.main-content { /*this class should ensure that a body of text normaly a p element has lines no longer then 80 signs*/
+  max-width: 36rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}

@@ -10,9 +10,11 @@
   </head>
   <body>
     <main class="main-content">
+      
       <h1>Minimal accessible typography</h1>
       <p>With this repository I am trying to create a <abbr title="Cascading Style Sheets">CSS</abbr> file which should help to validate a simple <abbr title="Hypertext Markup Language">HTML</abbr> document against the AAA criteria of the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr>. Moreover it should provide styles which make a document easy to read for everyone</p>
       <p>This documentation itself should not violate any Guidelines provided by the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr></p>
+      
       <nav>
         <h2>Table of Contents</h2>
         <ul>
@@ -25,6 +27,7 @@
           </li>
         </ul>
       </nav>
+      
       <h2 id="motivation">Motivation and decision making</h2>
       <ul>
         <li>
@@ -40,8 +43,39 @@
           There should be no need to add many classes to the <abbr title="Hypertext Markup Language">HTML</abbr> document.
         </li>
       </ul>
+      
       <h2 id="meetsc">Success Criteria and with the according Tests</h2>
       <p>The success criteria for the guideline 1.4 contain criteria about audio. As this is a pure text document this criteria ar left beside!</p>
+      
+      <h3>Visual Presentation<small>1.4.8 AAA</small></h3>
+      <p>
+        For details see the <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-visual-presentation">quick reference to Web Content Accessibility Guidelines (WCAG)</a>.
+      </p>
+      <p>The following list describes the points which should be fullfilled to meet the success criteria,</p>
+      <ol>
+        <li>
+          <p>
+            Foreground and background colors can be selected by the user.
+          </p>
+        </li>
+        <li>
+          <p>
+            Width is no more than 80 characters or glyphs (40 if CJK).
+          </p>
+        </li>
+        <li>
+          <p>Text is not justified (aligned to both the left and the right margins).</p>
+        </li>
+        <li>
+          <p>Line spacing (leading) is at least space-and-a-half within paragraphs, and paragraph spacing is at least 1.5 times larger than the line spacing.
+          </p>
+        </li>
+        <li>
+          <p>Text can be resized without assistive technology up to 200 percent in a way that does not require the user to scroll horizontally to read a line of text on a full-screen window.
+        </p>
+        </li>
+      </ol>
+      
       <h3 id="sc144">Meeting <abbr title="Success Criterion">SC</abbr> 1.4.4 Resize text</h3>  
       <p>Meeting this criterion with the help of <a href="http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G146">G146: Using liquid layout</a>.</p>
       <ol>
@@ -49,6 +83,7 @@
         <li>Check whether all content and functionality is available with no horizontal scrolling.</li>
       </ol>
       <p>Up to a certain amount of zooming text is zooming with its container elements when the viewport gets too small there will be text wrapping. At a certain stage of zooming words get too long for the viewport, at this moment the browser provides scrollbars.</p>
+      
       <h3 id="sc146">Meeting <abbr title="Success Criterion">SC</abbr> 1.4.6 Contrast (Enhanced)</h3>  
       <p>Meeting this criterion with the help of <a href="http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G146">G148: Not specifying background color, not specifying text color, and not using technology features that change those defaults</a>.</p>
       <ol class="enumar">
@@ -60,6 +95,7 @@
       </ol>
       <a href="#">Nach oben</a>
     </main>
+    
     <footer>
       <a href="https://validator.w3.org/check?uri=referer">Validate <abbr title="Hypertext Markup Language">HTML</abbr></a>
     </footer>

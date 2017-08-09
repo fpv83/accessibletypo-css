@@ -47,10 +47,8 @@ a:link {text-decoration: underline;}
 
 a:hover, a:active, a:focus {
   outline-width: 0.125rem;
-  outline-style: solid;
-  outline-color: #7FDBFF;
-  background-color: #001F3F;
-  color: #7FDBFF;
+  outline-style: dotted;
+  outline-color: inherit;
 }
 
 nav a:link {text-decoration: none;}

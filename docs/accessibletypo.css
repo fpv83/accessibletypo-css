@@ -66,9 +66,12 @@ hr, ul, ol, dl, blockquote {
   margin-left: 0rem;
 }
 
-dd {
-  margin-left: 0rem;
+li > ul, li > ol {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
 }
+
+dd {margin-left: 0rem;}
 
 blockquote {padding-right: 2.5rem;}
 

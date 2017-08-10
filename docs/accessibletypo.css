@@ -31,7 +31,10 @@ dt {font-weight: bold;}
 
 pre, code {background-color: #F5F5F5;}
 
-pre {color: #CC0000;}
+pre {
+  color: #CC0000;
+  overflow: scroll;
+}
 
 small {font-size: 0.75em;}
 

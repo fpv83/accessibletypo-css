@@ -33,7 +33,7 @@ pre, code {background-color: #F5F5F5;}
 
 pre {
   color: #CC0000;
-  overflow: scroll;
+  overflow: auto;
 }
 
 small {font-size: 0.75em;}

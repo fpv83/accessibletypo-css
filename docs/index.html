@@ -80,21 +80,21 @@
               <a href="https://www.w3.org/TR/WCAG20-TECHS/C20.html">C20: Using relative measurements to set column widths so that lines can average 80 characters or less when the browser is resized </a>
               <p>The following CSS rules are introduced to fullfill this requirement</p>
               <pre>
-html {
-  font-size: 100%;
-  font-family: 'Open Sans', Verdana, 'Lucida Grande', sans-serif;
-  line-height: 1.5; 
-}
+  html {
+    font-size: 100%;
+    font-family: 'Open Sans', Verdana, 'Lucida Grande', sans-serif;
+    line-height: 1.5; 
+  }
               </pre>
               <p>Set the font size for the hole document to 100% which would be for most browser 16px.</p>
               <pre>
-.main-content { /*this class should ensure that a body of text normaly a p element has lines no longer then 80 signs*/
-  max-width: 36rem;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
+  .main-content { /*this class should ensure that a body of text normaly a p element has lines no longer then 80 signs*/
+    max-width: 36rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
               </pre>
               <p>Use a class like "main-content" on the encapsulating module of your content. in combination with the font "Open Sans" and the font "Verdana" this should produce lines which are no longer then 80 signs</p>
             </li>

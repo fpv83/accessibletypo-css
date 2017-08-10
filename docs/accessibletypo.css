@@ -12,9 +12,9 @@ h3 {font-size: 1.25rem;}
 
 h4 {font-size: 1rem;}
 
-h5 {font-size: 0.875rem;} /*should not be used in a normal document*/
+h5 {font-size: 0.875rem;}
 
-h6 {font-size: 0.75rem;} /*should not be used in a normal document*/
+h6 {font-size: 0.75rem;}
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 2rem;
@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
 }
 
-p { /* paragraph spacing is at least 1.5 times larger than the line spacing. */
+p {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -45,7 +45,6 @@ code {
   padding-right: 0.25rem;
 }
 
-/* links */ 
 a:link {text-decoration: underline;}
 
 a:hover, a:active, a:focus {
@@ -55,7 +54,6 @@ a:hover, a:active, a:focus {
   text-decoration: none;
 }
 
-/* set indents and margins to rem for elements */
 ul, ol, dd, blockquote {padding-left: 2.5rem;}
 
 hr, ul, ol, dl, blockquote {
@@ -74,7 +72,6 @@ dd {margin-left: 0rem;}
 
 blockquote {padding-right: 2.5rem;}
 
-/* classes */
 .visuallyhidden { /*this class enables us to hide an element from the visual representation of a document but its still visible for screanreaders*/
   border: 0;
   clip: rect(0 0 0 0);

@@ -17,7 +17,7 @@ h5 {font-size: 0.875rem;} /*should not be used in a normal document*/
 h6 {font-size: 0.75rem;} /*should not be used in a normal document*/
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 1.75rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
   line-height: 1.25;
 }

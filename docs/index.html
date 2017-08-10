@@ -66,9 +66,6 @@
             Width is no more than 80 characters or glyphs (40 if CJK).
           </p>
           <p>
-            
-          </p>
-          <p>
               This criterion is met by using :
               <a href="https://www.w3.org/TR/WCAG20-TECHS/C20.html">C20: Using relative measurements to set column widths so that lines can average 80 characters or less when the browser is resized </a></p>
               <p>The following CSS rules are introduced to fullfill this requirement</p>
@@ -96,7 +93,26 @@
           <p>Text is not justified (aligned to both the left and the right margins).</p>
         </li>
         <li>
-          <p>Line spacing (leading) is at least space-and-a-half within paragraphs, and paragraph spacing is at least 1.5 times larger than the line spacing.
+          <p>
+            Line spacing (leading) is at least space-and-a-half within paragraphs, and paragraph spacing is at least 1.5 times larger than the line spacing.
+          </p>
+          <p>
+            This criterion is met by using :
+            <a href="https://www.w3.org/TR/WCAG20-TECHS/C21.html">C21: Specifying line spacing in CSS </a>
+            <p>The following CSS rules are introduced to fullfill this requirement</p>
+          <pre>
+  html {
+    font-size: 100%;
+    font-family: 'Open Sans', Verdana, 'Lucida Grande', sans-serif;
+    line-height: 1.5; 
+  }
+          </pre>
+          <pre>
+  p { /* paragraph spacing is at least 1.5 times larger than the line spacing. */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }         
+          </pre>
           </p>
         </li>
         <li>

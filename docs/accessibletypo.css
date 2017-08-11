@@ -45,6 +45,7 @@ h5 {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
+  font-weight: 800;
 }
 
 p {
@@ -60,6 +61,8 @@ pre {
   color: #CC0000;
   overflow: auto;
 }
+
+strong {font-weight: 600;}
 
 small {font-size: 0.75em;}
 

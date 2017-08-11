@@ -33,7 +33,6 @@ h5 {font-size: 0.875em;}
 h6 {font-size: 0.75em;}
 
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 1rem;
   line-height: 1.25;
 }
 
@@ -90,12 +89,12 @@ blockquote {padding-right: 2.5em;}
 .visuallyhidden { /*this class enables us to hide an element from the visual representation of a document but its still visible for screanreaders*/
   border: 0;
   clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
+  height: 0.0625rem;
+  margin: -0.0625rem;
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px;
+  width: 0.0625rem;
 }
 
 a.visuallyhidden:focus {/*making links visually reapear when receiving keyboard focus ex: <a class="visuallyhidden" href="#">skip to content</a>*/

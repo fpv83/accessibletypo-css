@@ -5,7 +5,7 @@ html {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   margin-top: 0.8em;
   margin-bottom: 0.4em;
 }
@@ -89,7 +89,7 @@ dd {margin-left: 0em;}
 
 blockquote {padding-right: 2.5em;}
 
-.visuallyhidden { /*this class enables us to hide an element from the visual representation of a document but its still visible for screanreaders*/
+.visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
   height: 0.0625rem;
@@ -100,13 +100,13 @@ blockquote {padding-right: 2.5em;}
   width: 0.0625rem;
 }
 
-a.visuallyhidden:focus {/*making links visually reapear when receiving keyboard focus ex: <a class="visuallyhidden" href="#">skip to content</a>*/
+a.visuallyhidden:focus {
   height:auto;
   width: auto;
   clip: auto;
 }
 
-.main-content { /*this class should ensure that a body of text normaly a p element has lines no longer then 80 signs*/
+.main-content {
   max-width: 36em;
   margin-right: auto;
   margin-left: auto;

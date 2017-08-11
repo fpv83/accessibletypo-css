@@ -9,238 +9,239 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
   </head>
   <body>
-    <main class="main-content">
-      
-      <h1>Minimal accessible typography</h1>
-      <p>
-        With this repository I am trying to create a
-        <abbr title="Cascading Style Sheets">CSS</abbr> file which should help
-        to validate a simple <abbr title="Hypertext Markup Language">HTML</abbr>
-        document against the AAA criteria of the
-        <abbr title="Web Content Accessibility Guidelines">WCAG</abbr>.
-        Moreover it should provide styles which make a document easy
-        to read for everyone.
-      </p>
-      <p>This documentation itself should not violate any Guidelines provided
-        by the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr>
-      </p>
-      <nav>
-        <h2>Table of Contents</h2>
+    <main>
+      <section class="main-content">
+        <h1>Minimal accessible typography</h1>
+        <p>
+          With this repository I am trying to create a
+          <abbr title="Cascading Style Sheets">CSS</abbr> file which should help
+          to validate a simple <abbr title="Hypertext Markup Language">HTML</abbr>
+          document against the AAA criteria of the
+          <abbr title="Web Content Accessibility Guidelines">WCAG</abbr>.
+          Moreover it should provide styles which make a document easy
+          to read for everyone.
+        </p>
+        <p>This documentation itself should not violate any Guidelines provided
+          by the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr>
+        </p>
+        <nav>
+          <h2>Table of Contents</h2>
+          <ul>
+            <li><a href="#motivation">Motivation and decision making</a></li>
+            <li><a href="#meetsc">Success Criteria and with the according tests</a>
+              <ul>
+                <li>
+                  <a href="#sc144">Meeting <abbr title="Success Criterion">SC</abbr>
+                  1.4.4 Resize text
+                  </a>
+                </li>
+                <li>
+                  <a href="#sc146">Meeting <abbr title="Success Criterion">SC</abbr>
+                    1.4.6 Contrast (Enhanced)
+                  </a>
+                </li>
+                <li>
+                  <a href="#sc148">Visual Presentation 1.4.8 AAA</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <h2 id="motivation">Motivation and decision making</h2>
         <ul>
-          <li><a href="#motivation">Motivation and decision making</a></li>
-          <li><a href="#meetsc">Success Criteria and with the according tests</a>
-            <ul>
-              <li>
-                <a href="#sc144">Meeting <abbr title="Success Criterion">SC</abbr>
-                1.4.4 Resize text
-                </a>
-              </li>
-              <li>
-                <a href="#sc146">Meeting <abbr title="Success Criterion">SC</abbr>
-                  1.4.6 Contrast (Enhanced)
-                </a>
-              </li>
-              <li>
-                <a href="#sc148">Visual Presentation 1.4.8 AAA</a>
-              </li>
-            </ul>
+          <li>
+            The <abbr title="Cascading Style Sheets">CSS</abbr> file should provide
+            the means to meet the
+            <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast.html#visual-audio-contrast-sc">
+              Success Criteria for the guideline 1.4 - <strong>Distinguishable</strong>
+            </a> of the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr>
+            2.0 on an AAA level.
+          </li>
+          <li>
+            The <abbr title="Cascading Style Sheet">CSS</abbr>
+            file should be as small as possible.
+          </li>
+          <li>
+            There should be no need to add many classes to the
+            <abbr title="Hypertext Markup Language">HTML</abbr>
+            document.
           </li>
         </ul>
-      </nav>
-      
-      <h2 id="motivation">Motivation and decision making</h2>
-      <ul>
-        <li>
-          The <abbr title="Cascading Style Sheets">CSS</abbr> file should provide
-          the means to meet the
-          <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast.html#visual-audio-contrast-sc">
-            Success Criteria for the guideline 1.4 - <strong>Distinguishable</strong>
-          </a> of the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr>
-          2.0 on an AAA level.
-        </li>
-        <li>
-          The <abbr title="Cascading Style Sheet">CSS</abbr>
-          file should be as small as possible.
-        </li>
-        <li>
-          There should be no need to add many classes to the
-          <abbr title="Hypertext Markup Language">HTML</abbr>
-          document.
-        </li>
-      </ul>
-      
-      <h2 id="meetsc">Success Criteria and with the according Tests</h2>
-      <p>The success criteria for the guideline 1.4 contain criteria about audio.
-        As this is a pure text document this criteria are left beside!
-      </p>
-      
-      <h3 id="sc148">Visual Presentation <small>1.4.8 AAA</small></h3>
-      <p>
-        For details see the
-        <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-visual-presentation">
-          quick reference to Web Content Accessibility Guidelines (WCAG)
-        </a>.
-      </p>
-      <p>
-        The following list describes the points which should be fullfilled
-        to meet the success criteria,
-      </p>
-      <ol>
-        <li>
-          <p>
-            <strong>
-              Foreground and background colors can be selected by the user.
-            </strong>
-          </p>
-          <p>
-            This criterion is met by using :
-            <a href="https://www.w3.org/TR/WCAG20-TECHS/G148.html">
-              G148: Not specifying background color, not specifying text color, and not using
-              technology features that change those defaults
-            </a>
-          </p>
-          <p>
-            The only hard thing about fullfilling this criterion is not specifying any
-            colors in the stylesheed concerning <strong>primary text</strong>. That
-            means for text color there is no dark grey which appears a little bit more
-            astethique for a body of text. Also there is no font color for links and
-            everything is being taken care of by the user agent.
-          </p>
-          <p>
-            The specification says that for <strong>secondary content</strong>,
-            background and font color should be defined. which means chosing the color
-            of general text and choosing color of links with every possible state. I took
-            the decision to indicate: ':active', ':hover' and ':focus' state with the CSS
-            outline attribute for wich i choose the color inheritence.
-          </p>
-          <p>
-            The styles for secondary content are in a different stylesheet to give the user
-            the possibility to use them or not and change them without having to change the
-            primary stylesheet.
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>Width is no more than 80 characters or glyphs (40 if CJK).</strong>
-          </p>
-          <p>
-            This criterion is met by using :
-            <a href="https://www.w3.org/TR/WCAG20-TECHS/C20.html">
-              C20: Using relative measurements to set column widths so that lines can average
-              80 characters or less when the browser is resized
-            </a>
-          </p>
-          <p>
-            The following CSS rules are introduced to fullfill this requirement
-          </p>
-          <pre>
-  html {
-    font-size: 100%;
-    font-family: 'Open Sans', Verdana, 'Lucida Grande', sans-serif;
-    line-height: 1.5; 
-  }
-          </pre>
-          <p>
-            Set the font size for the hole document to 100% which would be
-            for most browser 16px.
-          </p>
-          <pre>
-  .main-content {
-    max-width: 36rem;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
-          </pre>
-          <p>
-            Use a class like "main-content" on the encapsulating module of your content.
-            in combination with the font "Open Sans" and the font "Verdana" this should
-            produce lines which are no longer then 80 signs
-          </p>
-        </li>
-        <li>
-          <p>
-            Text is not justified (aligned to both the left and the right margins).
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>
-              Line spacing (leading) is at least space-and-a-half within paragraphs, and
-              paragraph spacing is at least 1.5 times larger than the line spacing.
-            </strong>
-          </p>
-          <p>
-            This criterion is met by using :
-            <a href="https://www.w3.org/TR/WCAG20-TECHS/C21.html">
-              C21: Specifying line spacing in CSS
-            </a>
+
+        <h2 id="meetsc">Success Criteria and with the according Tests</h2>
+        <p>The success criteria for the guideline 1.4 contain criteria about audio.
+          As this is a pure text document this criteria are left beside!
+        </p>
+
+        <h3 id="sc148">Visual Presentation <small>1.4.8 AAA</small></h3>
+        <p>
+          For details see the
+          <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-visual-presentation">
+            quick reference to Web Content Accessibility Guidelines (WCAG)
+          </a>.
+        </p>
+        <p>
+          The following list describes the points which should be fullfilled
+          to meet the success criteria,
+        </p>
+        <ol>
+          <li>
+            <p>
+              <strong>
+                Foreground and background colors can be selected by the user.
+              </strong>
+            </p>
+            <p>
+              This criterion is met by using :
+              <a href="https://www.w3.org/TR/WCAG20-TECHS/G148.html">
+                G148: Not specifying background color, not specifying text color, and not using
+                technology features that change those defaults
+              </a>
+            </p>
+            <p>
+              The only hard thing about fullfilling this criterion is not specifying any
+              colors in the stylesheed concerning <strong>primary text</strong>. That
+              means for text color there is no dark grey which appears a little bit more
+              astethique for a body of text. Also there is no font color for links and
+              everything is being taken care of by the user agent.
+            </p>
+            <p>
+              The specification says that for <strong>secondary content</strong>,
+              background and font color should be defined. which means chosing the color
+              of general text and choosing color of links with every possible state. I took
+              the decision to indicate: ':active', ':hover' and ':focus' state with the CSS
+              outline attribute for wich i choose the color inheritence.
+            </p>
+            <p>
+              The styles for secondary content are in a different stylesheet to give the user
+              the possibility to use them or not and change them without having to change the
+              primary stylesheet.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Width is no more than 80 characters or glyphs (40 if CJK).</strong>
+            </p>
+            <p>
+              This criterion is met by using :
+              <a href="https://www.w3.org/TR/WCAG20-TECHS/C20.html">
+                C20: Using relative measurements to set column widths so that lines can average
+                80 characters or less when the browser is resized
+              </a>
+            </p>
             <p>
               The following CSS rules are introduced to fullfill this requirement
-          </p>
-          <pre>
-  html {
-    font-size: 100%;
-    font-family: 'Open Sans', Verdana, 'Lucida Grande', sans-serif;
-    line-height: 1.5; 
-  }
-          </pre>
-          <pre>
-  p {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }         
-          </pre>
-          
-        </li>
-        <li>
-          <p>
-            <strong>
-              Text can be resized without assistive technology up to 200 percent
-              in a way that does not require the user to scroll horizontally to read
-              a line of text on a full-screen window.
-            </strong>
-          </p>
-          <p>
-            This criterion is met with the help of
-            <a href="http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G146">
-              G146: Using liquid layout
-            </a>.
-          </p>
-          <p>
-            Up to a certain amount of zooming text is zooming with its container elements
-            when the viewport gets too small there will be text wrapping. At a certain stage
-            of zooming words get too long for the viewport, at this moment the browser
-            provides scrollbars.
-          </p>
-        </li>
-      </ol>
+            </p>
+            <pre>
+    html {
+      font-size: 100%;
+      font-family: 'Open Sans', Verdana, 'Lucida Grande', sans-serif;
+      line-height: 1.5; 
+    }
+            </pre>
+            <p>
+              Set the font size for the hole document to 100% which would be
+              for most browser 16px.
+            </p>
+            <pre>
+    .main-content {
+      max-width: 36rem;
+      margin-right: auto;
+      margin-left: auto;
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+            </pre>
+            <p>
+              Use a class like "main-content" on the encapsulating module of your content.
+              in combination with the font "Open Sans" and the font "Verdana" this should
+              produce lines which are no longer then 80 signs
+            </p>
+          </li>
+          <li>
+            <p>
+              Text is not justified (aligned to both the left and the right margins).
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>
+                Line spacing (leading) is at least space-and-a-half within paragraphs, and
+                paragraph spacing is at least 1.5 times larger than the line spacing.
+              </strong>
+            </p>
+            <p>
+              This criterion is met by using :
+              <a href="https://www.w3.org/TR/WCAG20-TECHS/C21.html">
+                C21: Specifying line spacing in CSS
+              </a>
+              <p>
+                The following CSS rules are introduced to fullfill this requirement
+            </p>
+            <pre>
+    html {
+      font-size: 100%;
+      font-family: 'Open Sans', Verdana, 'Lucida Grande', sans-serif;
+      line-height: 1.5; 
+    }
+            </pre>
+            <pre>
+    p {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }         
+            </pre>
 
-      <h3 id="sc146">Meeting <abbr title="Success Criterion">SC</abbr> 1.4.6 Contrast (Enhanced)</h3>  
-      <p>
-        Meeting this criterion with the help of
-        <a href="http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G146">
-          G148: Not specifying background color, not specifying text color, and not
-          using technology features that change those defaults
-        </a>.
-      </p>
-      <ol class="enumar">
-        <li>
-          Look in all places that text color can be specified
-        </li>
-        <li>
-          Check that text color is not specified
-        </li>
-        <li>
-          Look in all areas that background color or image used as a background
-          can be specified
-        </li>
-        <li>
-          Check that no background color or image used as a background is specified
-        </li>
-      </ol>
-      <a href="#">Nach oben</a>
+          </li>
+          <li>
+            <p>
+              <strong>
+                Text can be resized without assistive technology up to 200 percent
+                in a way that does not require the user to scroll horizontally to read
+                a line of text on a full-screen window.
+              </strong>
+            </p>
+            <p>
+              This criterion is met with the help of
+              <a href="http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G146">
+                G146: Using liquid layout
+              </a>.
+            </p>
+            <p>
+              Up to a certain amount of zooming text is zooming with its container elements
+              when the viewport gets too small there will be text wrapping. At a certain stage
+              of zooming words get too long for the viewport, at this moment the browser
+              provides scrollbars.
+            </p>
+          </li>
+        </ol>
+
+        <h3 id="sc146">Meeting <abbr title="Success Criterion">SC</abbr> 1.4.6 Contrast (Enhanced)</h3>  
+        <p>
+          Meeting this criterion with the help of
+          <a href="http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G146">
+            G148: Not specifying background color, not specifying text color, and not
+            using technology features that change those defaults
+          </a>.
+        </p>
+        <ol class="enumar">
+          <li>
+            Look in all places that text color can be specified
+          </li>
+          <li>
+            Check that text color is not specified
+          </li>
+          <li>
+            Look in all areas that background color or image used as a background
+            can be specified
+          </li>
+          <li>
+            Check that no background color or image used as a background is specified
+          </li>
+        </ol>
+        <a href="#">Nach oben</a>
+      </section>
     </main>
     
     <footer>

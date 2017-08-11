@@ -4,6 +4,14 @@ html {
   line-height: 1.5; 
 }
 
+.at-container {
+  max-width: 36em;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
 h1 {
   font-size: 2.5em;
   margin-top: 0.8em;
@@ -89,7 +97,7 @@ dd {margin-left: 0em;}
 
 blockquote {padding-right: 2.5em;}
 
-.visuallyhidden {
+.at-hidden {
   border: 0;
   clip: rect(0 0 0 0);
   height: 0.0625rem;
@@ -100,16 +108,8 @@ blockquote {padding-right: 2.5em;}
   width: 0.0625rem;
 }
 
-a.visuallyhidden:focus {
+a.at-hidden:focus {
   height:auto;
   width: auto;
   clip: auto;
-}
-
-.main-content {
-  max-width: 36em;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 1em;
-  padding-left: 1em;
 }

@@ -144,7 +144,7 @@ blockquote {padding-right: 2.5em;}
   margin: -.0625rem;
   border: 0;
   padding: 0;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
 

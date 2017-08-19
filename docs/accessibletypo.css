@@ -117,7 +117,7 @@ blockquote {padding-right: 2.5em;}
   padding-right: 1em;
   padding-left: 1em;
 }
-@media (min-width: 38em) {
+@media (min-width: 28em) {
   .at-container {
     padding-right: 2em;
     padding-left: 2em;

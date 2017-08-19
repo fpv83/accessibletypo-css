@@ -126,7 +126,7 @@ blockquote {padding-right: 2.5em;}
 
 @media (min-width: 38em) {
   .at-container {
-    max-width: 38em;
+    max-width: 34em;
   }
 }
 

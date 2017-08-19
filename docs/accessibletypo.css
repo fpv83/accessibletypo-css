@@ -168,7 +168,8 @@ a.at-hidden:focus {
 }
 
 .at-secondary a:visited {
-  color: #ff851b;
+  /*color: #ff851b;*/
+  color: #ffdc00;
 }
 
 .at-secondary a:hover, 

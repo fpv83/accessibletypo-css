@@ -155,3 +155,26 @@ a.at-hidden:focus {
   color: black;
   background-color: white;
  }
+
+.at-secondary {
+  color: #fff;
+  background-color: #000;
+}
+
+
+.at-secondary a:link {
+  color: #ffdc00;
+}
+
+.at-secondary a:visited {
+  color: #ff851b;
+}
+
+.at-secondary a:hover, 
+.at-secondary a:active, 
+.at-secondary a:focus {
+  outline-width: .125rem;
+  outline-style: dashed;
+  outline-color: inherit;
+  text-decoration: none;
+}

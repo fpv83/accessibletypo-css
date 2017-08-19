@@ -4,14 +4,6 @@ html {
   line-height: 1.5; 
 }
 
-.at-container {
-  max-width: 37em;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 1em;
-  padding-left: 1em;
-}
-
 h1 {
   margin-top: .8em;
   margin-bottom: .4em;
@@ -117,6 +109,26 @@ dd {margin-left: 0;}
 
 blockquote {padding-right: 2.5em;}
 
+.at-container {
+  max-width: 39em;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+@media (min-width: 38em) {
+  .at-container {
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+}
+@media (min-width: 48em) {
+  .at-container {
+    padding-right: 3em;
+    padding-left: 3em;
+  }
+}
 .at-hidden {
   position: absolute;
   height: .0625rem;

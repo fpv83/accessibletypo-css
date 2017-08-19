@@ -117,18 +117,27 @@ blockquote {padding-right: 2.5em;}
   padding-right: 1em;
   padding-left: 1em;
 }
+
 @media (min-width: 28em) {
   .at-container {
     padding-right: 2em;
     padding-left: 2em;
   }
 }
+
+@media (min-width: 38em) {
+  .at-container {
+    max-width: 39em;
+  }
+}
+
 @media (min-width: 48em) {
   .at-container {
     padding-right: 3em;
     padding-left: 3em;
   }
 }
+
 .at-hidden {
   position: absolute;
   height: .0625rem;

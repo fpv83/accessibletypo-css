@@ -110,7 +110,6 @@ dd {margin-left: 0;}
 blockquote {padding-right: 2.5em;}
 
 .at-container {
-  max-width: 39em;
   margin-right: auto;
   margin-left: auto;
   padding-top: 1em;
@@ -127,7 +126,7 @@ blockquote {padding-right: 2.5em;}
 
 @media (min-width: 38em) {
   .at-container {
-    max-width: 39em;
+    max-width: 38em;
   }
 }
 

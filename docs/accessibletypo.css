@@ -171,12 +171,3 @@ a.at-hidden:focus {
   /*color: #ff851b;*/
   color: #ffdc00;
 }
-
-.at-secondary a:hover, 
-.at-secondary a:active, 
-.at-secondary a:focus {
-  outline-width: .125rem;
-  outline-style: dashed;
-  outline-color: inherit;
-  text-decoration: none;
-}

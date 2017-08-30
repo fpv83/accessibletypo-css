@@ -157,6 +157,7 @@ a.at-hidden:focus {
  }
 
 .at-secondary {
+  padding-bottom: 1em;
   color: #fff;
   background-color: #000;
 }

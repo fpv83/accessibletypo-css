@@ -115,6 +115,7 @@ img {
 }
 
 .at-container {
+  max-width: 34em;
   margin-right: auto;
   margin-left: auto;
   padding-top: 1em;
@@ -128,13 +129,7 @@ img {
     padding-left: 2em;
   }
 }
-
-@media (min-width: 38em) {
-  .at-container {
-    max-width: 34em;
-  }
-}
-
+   
 @media (min-width: 48em) {
   .at-container {
     padding-right: 3em;

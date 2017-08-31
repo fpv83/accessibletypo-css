@@ -109,6 +109,11 @@ dd {margin-left: 0;}
 
 blockquote {padding-right: 2.5em;}
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .at-container {
   margin-right: auto;
   margin-left: auto;

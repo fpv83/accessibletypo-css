@@ -1,92 +1,171 @@
 html {
   font-size: 100%;
-  font-family: 'Open Sans', Verdana, Lucida Grande, sans-serif;
+  font-family: 'Open Sans', Verdana, 'Lucida Grande', sans-serif;
   line-height: 1.5; 
 }
 
-h1 {font-size: 3rem;}
+h1 {
+  margin-top: .8em;
+  margin-bottom: .4em;
+  font-size: 2.5em;
+}
 
-h2 {font-size: 2.25rem;}
+h2 {
+  margin-top: 1em;
+  margin-bottom: .5em;
+  font-size: 2em;
+}
 
-h3 {font-size: 1.75rem;}
+h3 {
+  margin-top: 1.6em;
+  margin-bottom: .8em;
+  font-size: 1.25em;
+}
 
-h4 {font-size: 1.25rem;}
+h4 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 1em;
+}
 
-h5 {font-size: 1rem;}
+h5 { 
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 1em;
+  font-weight: 400;
+}
 
-h6 {font-size: 0.875rem;}
-
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 1.75rem;
-  margin-bottom: 1rem;
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  letter-spacing: -.05em;
   line-height: 1.25;
-  font-weight: bold;
+  font-weight: 600;
 }
 
-p { /* paragraph spacing is at least 1.5 times larger than the line spacing. */
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
-dt {font-weight: bold;}
+dt {font-weight: 700;}
 
-pre, code {background-color: #F5F5F5;}
+pre, 
+code {
+  background-color: #f5f5f5;
+}
 
-pre {color: #CC0000;}
+pre {
+  color: #cc0000;
+  overflow: auto;
+}
 
-small {font-size: 0.75em;}
+small {font-size: .75em;}
 
 code {
-  color: #CC0000;
-  border-radius: 0.25rem;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+  border-radius: .25em;
+  padding-left: .25em;
+  padding-right: .25em;
+  color: #cc0000;
 }
 
-/* links */ 
 a:link {text-decoration: underline;}
 
-a:hover, a:active, a:focus {
-  outline-width: 0.125rem;
-  outline-style: dotted;
+a:hover, 
+a:active, 
+a:focus {
+  outline-width: .125rem;
+  outline-style: dashed;
   outline-color: inherit;
   text-decoration: none;
 }
 
-/* set indents and margins to rem for elements */
-ul, ol, dd, blockquote {padding-left: 2.5rem;}
+ul, 
+ol, 
+dd, 
+blockquote {padding-left: 2.5em;}
 
-hr, ul, ol, dd, blockquote {
-  margin-top: 1rem;
-  margin-right: 0rem;
-  margin-bottom: 1rem;
-  margin-left: 0rem;
+hr,
+ul, 
+ol, 
+dl, 
+blockquote {
+  margin-top: 1em;
+  margin-right: 0;
+  margin-bottom: 1em;
+  margin-left: 0;
 }
 
-blockquote {padding-right: 2.5rem;}
+li > ul,
+li > ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
-/* classes */
-.visuallyhidden { /*this class enables us to hide an element from the visual representation of a document but its still visible for screanreaders*/
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
+dd {margin-left: 0;}
+
+blockquote {padding-right: 2.5em;}
+
+.at-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.at-container {
+  max-width: 34em;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+@media (min-width: 28em) {
+  .at-container {
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+}
+   
+@media (min-width: 48em) {
+  .at-container {
+    padding-right: 3em;
+    padding-left: 3em;
+  }
+}
+
+.at-hidden {
   position: absolute;
-  width: 1px;
+  height: .0625rem;
+  width: .0625rem;
+  margin: -.0625rem;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
 }
 
-a.visuallyhidden:focus {/*making links visually reapear when receiving keyboard focus ex: <a class="visuallyhidden" href="#">skip to content</a>*/
+a.at-hidden:focus {
   height:auto;
   width: auto;
   clip: auto;
+  color: black;
+  background-color: white;
+ }
+
+.at-secondary {
+  padding-bottom: 1em;
+  color: #fff;
+  background-color: #000;
 }
 
-.main-content { /*this class should ensure that a body of text normaly a p element has lines no longer then 80 signs*/
-  max-width: 36rem;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 1rem;
-  padding-left: 1rem;
+.at-secondary a:link {
+  color: #ffdc00;
+}
+
+.at-secondary a:visited {
+  color: #ffdc00;
 }

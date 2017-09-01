@@ -1,0 +1,30 @@
+{
+  "name": "accessibletypo-css",
+  "version": "1.0.0",
+  "description": "Minimal Styles that are in conformance with WCAG2.0",
+  "main": "accessibletypo.css",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fpv83/accessibletypo-css.git"
+  },
+  "keywords": [
+    "css",
+    "typography"
+  ],
+  "author": "fpv83",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fpv83/accessibletypo-css/issues"
+  },
+  "homepage": "https://github.com/fpv83/accessibletypo-css#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.7.0"
+  }
+}

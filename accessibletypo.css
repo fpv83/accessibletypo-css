@@ -147,25 +147,3 @@ blockquote {padding-right: 2.5em;}
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
-
-a.at-hidden:focus {
-  height:auto;
-  width: auto;
-  clip: auto;
-  color: black;
-  background-color: white;
- }
-
-.at-secondary {
-  padding-bottom: 1em;
-  color: #fff;
-  background-color: #000;
-}
-
-.at-secondary a:link {
-  color: #ffdc00;
-}
-
-.at-secondary a:visited {
-  color: #ffdc00;
-}

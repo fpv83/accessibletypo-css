@@ -13,7 +13,7 @@ gulp.task('default', () => {
 
 gulp.task('inlinesource', () => {
   return gulp.src('index.html')
-    .pipe(inlinesource())
+  .pipe(inlinesource())
   .pipe(gulp.dest('docs'));
 });
 

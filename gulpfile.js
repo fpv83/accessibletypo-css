@@ -3,7 +3,7 @@ let cleanCSS = require('gulp-clean-css');
 let inlinesource = require('gulp-inline-source');
 
 gulp.task('default', () => {
-  return gulp.src(['/node_modules/normalize.css/normalize.css','*.css'])
+  return gulp.src(['node_modules/normalize.css/normalize.css','*.css'])
     .pipe(cleanCSS({debug: true}, function(details) {
       console.log(details.name + ': ' + details.stats.originalSize);
       console.log(details.name + ': ' + details.stats.minifiedSize);

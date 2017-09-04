@@ -1,5 +1,6 @@
 let gulp = require('gulp');
 let cleanCSS = require('gulp-clean-css');
+let concatCSS = require('gulp-concat');
 let inlinesource = require('gulp-inline-source');
 
 gulp.task('default', () => {
@@ -11,6 +12,12 @@ gulp.task('default', () => {
   .pipe(gulp.dest('dist'))
   .pipe(gulp.dest('docs'));
 });
+
+gulp.task('concatCSS', () => {
+  return gulp.src(['dist/accessibletypo.css','dist/accessibletypo-secondary.css','dist/normalize.css'])
+    .pipe(concatCSS('style.css'))
+    .pipe(gulp.dest('docs'));
+})
 
 gulp.task('inlinesource', () => {
   return gulp.src('index.html')

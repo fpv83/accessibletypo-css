@@ -14,7 +14,7 @@ gulp.task('default', () => {
 });
 
 gulp.task('concatCSS', () => {
-  return gulp.src(['dist/accessibletypo.css','dist/accessibletypo-secondary.css','dist/normalize.css'])
+  return gulp.src(['dist/normalize.css','dist/accessibletypo.css','dist/accessibletypo-secondary.css'])
     .pipe(concatCSS('style.css'))
     .pipe(gulp.dest('docs'));
 })

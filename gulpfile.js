@@ -10,7 +10,6 @@ gulp.task('default', () => {
       console.log(details.name + ': ' + details.stats.minifiedSize);
     }))
   .pipe(gulp.dest('dist'))
-  .pipe(gulp.dest('docs'));
 });
 
 gulp.task('concatCSS', () => {

@@ -106,6 +106,10 @@ li > ol {
   margin-bottom: 0;
 }
 
+li {
+  margin-top: 3.125em;
+}
+
 dd {margin-left: 0;}
 
 blockquote {padding-right: 2.5em;}
